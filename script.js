@@ -202,7 +202,6 @@ function getRandom(arr) {
       var randomIndex = Math.floor(Math.random() * possibleCharacters.length);
       password += possibleCharacters[randomIndex];
     }
-    alert("Your password is: " + password +"\nYour password contains "+ charTypes.join(", "));
 
     return password;
   }
@@ -212,26 +211,37 @@ function getRandom(arr) {
 passwordOptions variable. It is then calling the getRandom function and passing the passwordOptions
 variable as an argument. It is then storing the returned value in the randomPassword variable. It is
 then logging the randomPassword variable to the console. */
-var passwordOptions = getPasswordOptions();
-var randomPassword = getRandom(passwordOptions);
-console.log(randomPassword);
+// var passwordOptions = getPasswordOptions();
+// var randomPassword = getRandom(passwordOptions);
+// console.log(randomPassword);
 
 
-// Function to generate password with user input
+//? Function to generate password with user input
+// The generatePassword() function is a function that
+// generates a random password based on the password options that the user has chosen.
 function generatePassword() {
-
+  /* Storing the password options that the user has chosen and storing the random password that is
+  being generated based on the password options that the user has chosen. */
+  var passwordOptions = getPasswordOptions();
+  /* Storing the random password that is being generated based on the password options that the user
+  has chosen. */
+  var randomPassword = getRandom(passwordOptions);
+  /* Returning the random password that is being generated based on the password options that the user
+  has chosen. */
+  return randomPassword;
 }
 
-// Get references to the #generate element
+//? Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
 
-// Write password to the #password input
+//? Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  
+  var newPassword = generatePassword();
   var passwordText = document.querySelector('#password');
-
-  passwordText.value = password;
+  passwordText.value = "";
+  passwordText.value = newPassword;
 }
 
-// Add event listener to generate button
+//? Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
