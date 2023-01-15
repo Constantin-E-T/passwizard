@@ -36,3 +36,15 @@ Unlock the power of secure passwords with our cutting-edge web-based generator. 
 ## Authors
 
 * [@Constantin-E-T](https://github.com/Constantin-E-T/)
+
+## Skills
+
+Javascript, HTML, CSS, Python, Django
+
+## Tech Stack
+
+**Client:** HTML, CSS, Javascript
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
