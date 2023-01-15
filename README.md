@@ -27,8 +27,6 @@ Unlock the power of secure passwords with our cutting-edge web-based generator. 
 
 * User-friendly and easy to use
 
-* And the most Increase/Decrease in Profits
-
 ## Screenshots
 
 ![App Screenshot](./images/passwizard.png)
