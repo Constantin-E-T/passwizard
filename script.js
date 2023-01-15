@@ -134,7 +134,7 @@ function getPasswordOptions() {
 
   // This is a series of confirm statements that are asking the user if they want to include special
   // characters, numeric characters, lowercase characters, and uppercase characters in their password. 
-  if (!hasLower && hasNumeric && hasUpper && hasSpecial) {
+  if (!hasLower && !hasNumeric && !hasUpper && !hasSpecial) {
     alert('You must choose at least one character type.');
     return getPasswordOptions();
   }
